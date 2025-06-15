@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'authuser',  # ✅ added comma
     'rest_framework_simplejwt',
     'djoser',
-    'apidocs',
-    'drf_yasg'
 
 
 ]

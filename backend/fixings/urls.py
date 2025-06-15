@@ -1,6 +1,9 @@
+# fixings/urls.py
 from django.urls import path
-from .views import ScrewCalculator
+from .views import fixings
+
+app_name = 'fixings'
 
 urlpatterns = [
-    path('calculate/', ScrewCalculator.as_view()),
+    path('fixings/', fixings, name='fixings'),
 ]
