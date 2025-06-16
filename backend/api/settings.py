@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -151,3 +152,12 @@ MEDIA_ROOT = 'static/images'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Automatically run Django server using PyCharm Run Configuration:
+# Do NOT include the .env file in deployment.
+
+from dotenv import load_dotenv
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret")
