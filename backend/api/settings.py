@@ -158,6 +158,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Automatically run Django server using PyCharm Run Configuration:
 # Do NOT include the .env file in deployment.
 
-from dotenv import load_dotenv
-load_dotenv()
-SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret")
