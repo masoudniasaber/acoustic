@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import dj_database_url
 import os
-from decouple import config
+from decouple import config, Csv
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,9 +30,8 @@ SECRET_KEY = 'django-insecure-&jwm=*sm+!hfu%bq2+9q)+dw3f3*!x1k$+5y^%5@5rtg1_xfj8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = ['acoustic.onrender.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
