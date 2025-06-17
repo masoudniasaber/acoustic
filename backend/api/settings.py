@@ -33,7 +33,7 @@ DEBUG = True
 
 
 # ALLOWED_HOSTS = ['127.0.0.1']
-ALLOWED_HOSTS = ['acoustic.onrender.com']
+ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
