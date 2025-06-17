@@ -32,7 +32,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['acoustic.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
