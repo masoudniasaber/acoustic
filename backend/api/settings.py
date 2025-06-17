@@ -31,8 +31,8 @@ SECRET_KEY = 'django-insecure-&jwm=*sm+!hfu%bq2+9q)+dw3f3*!x1k$+5y^%5@5rtg1_xfj8
 DEBUG = True
 
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+ALLOWED_HOSTS = ['acoustic.onrender.com']
 
 # Application definition
 
